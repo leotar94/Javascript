@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio Oggetti</title>
+</head>
+<body>
+    <p id="display"></p>
+    <script>
+        let gatto= {
+            razza: "siamese",
+            colore: "grigio",
+            nome : "Pippo",
+            info : function () {
+                document.getElementById('display').innerHTML =
+                    'Ho un nuovo gatto di nome '+this.nome+' è un gatto '+
+                        this.colore + ' di razza '+this.razza;
+            }
+        }
+        gatto.info();
+    </script>
+</body>
+</html>
