@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oggetti Javascript</title>
+</head>
+<body>
+    <p id="display"></p>
+    <script>
+        let persona={
+            nome: 'Leo',
+            cognome:'Tar',
+            età: 30,
+            presenta: function () {
+                document.getElementById('display').innerHTML =
+                    'Nome = '+this.nome+' Cognome = '+this.cognome+
+                        ' Età = '+ this.età;
+            }
+        }
+        persona.presenta();
+        console.log(persona.nome + persona.cognome + persona.età);
+
+        persona.indirizzo = 'Viale ALdo Moro';
+
+        console.log(persona.indirizzo);
+    </script>
+</body>
+</html>
